@@ -175,7 +175,12 @@ Inheritance adalah konsep di mana sebuah class (subclass) mewarisi atribut dan m
 - `Satwa` sebagai superclass menyimpan data umum: ID, nama, dan jenis.
 - `Mamalia` dan `Reptil` sebagai subclass mewarisi data tersebut dan menambahkan data khusus (habitat atau berbisa).
 - Kata kunci `super(id, nama, jenis)` di constructor subclass dipakai untuk memanggil constructor `Satwa`.
-
+- Peran Satwa sebagai superclass, yaitu data umum yang dimiliki semua satwa.
+- Peran Mamalia dan Reptil sebagai subclass, lengkap dengan apa yang diwarisi dan atribut khusus yang ditambahkan.
+- Hubungan "is-a": Mamalia adalah Satwa, Reptil adalah Satwa, sehingga keduanya bisa disimpan dalam satu ArrayList<Satwa>.
+- Method tampilkanInfo() yang di-override dan method cetakStatus() yang final.
+- Alasan memakai hierarki ini, yaitu data umum cukup ditulis sekali dan mudah menambah kelompok satwa baru.
+- Hubungan class lain (SatwaCRUD, Menu, SatwaCek) dalam satu paragraf singkat.
 Contoh kode:
 
 ```java
