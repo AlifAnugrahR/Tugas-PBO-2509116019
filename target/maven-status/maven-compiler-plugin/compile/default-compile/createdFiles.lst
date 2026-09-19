@@ -1,0 +1,7 @@
+com\mycompany\uts\pbo\alifanugrahr\UTSPBOAlifAnugrahR.class
+Controller\SatwaCRUD.class
+model\satwa.class
+Controller\SatwaCek.class
+model\mamalia.class
+model\reptil.class
+view\Menu.class
