@@ -1,6 +1,6 @@
 # UTS PBO: Sistem Pendataan dan Monitoring Satwa Dilindungi
 
-Alif Anugrah Ramadhan | 2509116019
+Alif Anugrah Ramadhan | 2509116019 | Kelas A Sistem Informasi
 
 ---
 
@@ -64,13 +64,15 @@ Jika input salah, program menampilkan pesan kesalahan dan meminta pengguna mengu
 
 Pada saat program dijalankan, program menampilkan menu utama yang terdiri dari lima pilihan.
 
-![Tampilan menu utama](images/1-menu.png)
+<img width="553" height="282" alt="image" src="https://github.com/user-attachments/assets/1ae1e825-03fe-4b1f-b426-7fbe79aa543e" />
+
 
 **2. Menampilkan Data Awal (Dummy Data)**
 
 Pengguna memilih menu 2. Tampilkan Satwa. Program menampilkan 2 data awal, yaitu Orangutan (Mamalia, habitat Hutan) dan Komodo (Reptil, berbisa Tidak). Terlihat bahwa Mamalia menampilkan habitat dan Reptil menampilkan berbisa.
 
-![Tampilan data awal](images/2-tampil-awal.png)
+<img width="513" height="447" alt="image" src="https://github.com/user-attachments/assets/3993de33-23c3-4e79-93e3-384cbc1c8085" />
+
 
 **3. Tambah Data Satwa**
 
@@ -83,37 +85,43 @@ Pengguna memilih menu 1. Tambah Satwa. Data yang dimasukkan pada pengujian ini:
 
 Setelah semua data dimasukkan, program menampilkan pesan "Mantap Boss, data satwa berhasil ditambahkan!". Hal ini menunjukkan data berhasil disimpan ke dalam ArrayList.
 
-![Tampilan tambah satwa](images/3-tambah.png)
+<img width="633" height="171" alt="image" src="https://github.com/user-attachments/assets/290a9c73-ebd0-4e0d-a32e-de39c32fb176" />
+
 
 **4. Update Data Satwa**
 
 Pengguna memilih menu 3. Update Satwa, lalu memasukkan ID 3 dan nama baru. Setelah berhasil, program menampilkan pesan "Mantap Boss, data satwa berhasil diupdate!".
 
-![Tampilan update satwa](images/4-update.png)
+<img width="597" height="128" alt="image" src="https://github.com/user-attachments/assets/e7e8e62b-9147-43e6-be2c-a2affcd7c932" />
+
 
 **5. Pengujian Validasi ID Bukan Angka**
 
-Pengguna memilih menu 4. Hapus Satwa, lalu memasukkan "abc" sebagai ID. Karena bukan angka, program menampilkan pesan "Woopss, ID harus berupa angka Bosku!" dan meminta ID diulang. Program tidak berhenti.
+Pengguna memilih menu 4. Hapus Satwa, lalu memasukkan "abc" sebagai ID. Karena bukan angka, program menampilkan pesan "Maaf, ID harus berupa angka Boss!" dan meminta ID diulang. Program tidak berhenti.
 
-![Validasi ID bukan angka](images/5-validasi-id.png)
+<img width="476" height="110" alt="image" src="https://github.com/user-attachments/assets/b2a9c5ec-cc9b-4210-9811-da66b2cc1d40" />
+
 
 **6. Pengujian Validasi Jenis Satwa dan ID Dobel**
 
-Pada menu 1. Tambah Satwa, pengguna memasukkan ID 1 yang sudah dipakai. Program menampilkan pesan "Woopss, ID itu sudah dipakai Bosku, coba ID lain!". Selanjutnya pengguna memasukkan jenis "Burung". Program menampilkan pesan "Woopss, jenis harus Mamalia atau Reptil Bosku!" dan meminta jenis diulang.
+Pada menu 1. Tambah Satwa, pengguna memasukkan ID 1 yang sudah dipakai. Program menampilkan pesan "maaf, ID itu sudah dipakai Boss, coba ID lain!". Selanjutnya pengguna memasukkan jenis "Burung". Program menampilkan pesan "Maaf, jenis harus Mamalia atau Reptil Boss!" dan meminta jenis diulang.
 
-![Validasi ID dobel dan jenis](images/6-validasi-jenis.png)
+<img width="651" height="202" alt="image" src="https://github.com/user-attachments/assets/a56078de-5c31-4fe7-91d3-b906f419e1dc" />
+
 
 **7. Hapus Data Satwa**
 
 Pengguna memilih menu 4. Hapus Satwa, lalu memasukkan ID 3. Jika ID ditemukan, data dihapus dari ArrayList dan program menampilkan pesan "Siap Boss, data satwa berhasil dihapus!". Jika ID tidak ada, program menampilkan pesan "Woopss, ID satwa tidak ditemukan Bosku!".
 
-![Tampilan hapus satwa](images/7-hapus.png)
+<img width="582" height="102" alt="image" src="https://github.com/user-attachments/assets/12d8c350-6fa8-43a4-9ea1-51d3b1de6936" />
+
 
 **8. Keluar dari Program**
 
 Pengguna memilih menu 5. Keluar. Program menampilkan pesan "Siap Boss, program selesai. Sampai jumpa Bosku!" dan berhenti.
 
-![Tampilan keluar](images/8-keluar.png)
+<img width="592" height="208" alt="image" src="https://github.com/user-attachments/assets/912280a6-ad08-48e3-a4f6-9d9fd111ef26" />
+
 
 ---
 
