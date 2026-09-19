@@ -4,12 +4,13 @@ Alif Anugrah Ramadhan | 2509116019 | Kelas A Sistem Informasi
 
 ---
 
-## 1. Deskripsi Program
+## 1.Latar Belakang
 
-Program ini merupakan aplikasi sederhana berbasis Java yang dibuat menggunakan NetBeans untuk melakukan pendataan dan monitoring satwa dilindungi. Program digunakan untuk mengelola data satwa yang meliputi proses menambahkan data, menampilkan data, memperbarui data, dan menghapus data.
+Indonesia memiliki banyak satwa yang dilindungi, seperti Orangutan, Komodo, dan Harimau Sumatera. Keberadaan satwa-satwa ini terancam oleh perburuan, perdagangan ilegal, dan hilangnya habitat. Untuk menjaganya, data satwa perlu dicatat dan dipantau dengan baik, misalnya nama satwa, kelompok jenisnya, dan data khusus seperti habitat atau apakah satwa tersebut berbisa.
 
-Program ini dibuat sebagai tugas UTS mata kuliah Pemrograman Berorientasi Objek (PBO) dan dikembangkan dari Mini Project 2, sesuai ketentuan UTS yang memperbolehkan menggunakan program yang sama. Program menerapkan konsep PBO, yaitu input validation, access modifier, encapsulation, inheritance, polymorphism, ArrayList, dan MVC sederhana.
+Jika pendataan dilakukan secara manual, data mudah salah, tertukar, atau tercatat ganda. Karena itu dibuat program konsol sederhana untuk membantu mencatat dan memantau satwa dilindungi.
 
+Studi kasus ini dipilih karena satwa mudah dikelompokkan menjadi jenis yang berbeda (Mamalia dan Reptil). Semua satwa punya data umum yang sama (ID, nama, jenis), tetapi tiap kelompok punya data khusus sendiri. Kondisi ini cocok untuk menerapkan inheritance.
 ### Class yang ada di program ini
 
 **1. UTSPBOAlifAnugrahR.java**
