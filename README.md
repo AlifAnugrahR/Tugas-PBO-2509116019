@@ -10,14 +10,14 @@ Indonesia memiliki banyak satwa yang dilindungi, seperti Orangutan, Komodo, dan 
 
 Jika pendataan dilakukan secara manual, data mudah salah, tertukar, atau tercatat ganda. Karena itu dibuat program konsol sederhana untuk membantu mencatat dan memantau satwa dilindungi.
 
-Studi kasus ini dipilih karena satwa mudah dikelompokkan menjadi jenis yang berbeda (Mamalia dan Reptil). Semua satwa punya data umum yang sama (ID, nama, jenis), tetapi tiap kelompok punya data khusus sendiri. Kondisi ini cocok untuk menerapkan inheritance.
+Studi kasus ini dipilih karena satwa mudah dikelompokkan menjadi jenis yang berbeda (Mamalia dan Reptil). Semua satwa punya data umum yang sama (ID, nama, jenis), tetapi tiap kelompok punya data khusus sendiri.
 ### Class yang ada di program ini
 
 **1. UTSPBOAlifAnugrahR.java**
 Merupakan class utama atau entry point untuk menjalankan program. Class ini membuat objek Scanner dan objek SatwaCRUD, lalu memanggil menu utama.
 
 **2. Satwa.java**
-Merupakan superclass yang menyimpan data umum satwa, yaitu ID, nama, dan jenis. Class ini memiliki constructor, getter, setter, method `tampilkanInfo()`, dan method `cetakStatus()`.
+Merupakan superclass yang menyimpan data umum satwa, yaitu ID, nama, dan jenis. Class ini memiliki constructor, getter, setter, method tampilkanInfo(), dan method cetakStatus().
 
 **3. Mamalia.java**
 Merupakan subclass dari Satwa dengan tambahan data habitat.
@@ -38,9 +38,9 @@ Merupakan class controller yang melakukan validasi input, yaitu memastikan ID be
 
 ## 2. Alur Program
 
-Alur program dimulai ketika program dijalankan melalui class `UTSPBOAlifAnugrahR.java`. Program membuat objek `SatwaCRUD` yang otomatis sudah berisi 2 data awal, lalu menampilkan menu utama yang terdiri dari lima pilihan, yaitu Tambah Satwa, Tampilkan Satwa, Update Satwa, Hapus Satwa, dan Keluar.
+Alur program dimulai ketika program dijalankan melalui class UTSPBOAlifAnugrahR.java. Program membuat objek SatwaCRUD yang otomatis sudah berisi 2 data awal, lalu menampilkan menu utama yang terdiri dari lima pilihan, yaitu Tambah Satwa, Tampilkan Satwa, Update Satwa, Hapus Satwa, dan Keluar.
 
-Pengguna memilih menu dengan memasukkan angka. Program menggunakan `switch` untuk menentukan proses yang dijalankan. Jika angka yang dimasukkan tidak ada di menu, program menampilkan pesan menu tidak tersedia.
+Pengguna memilih menu dengan memasukkan angka. Program menggunakan switch untuk menentukan proses yang dijalankan. Jika angka yang dimasukkan tidak ada di menu, program menampilkan pesan menu tidak tersedia.
 
 Pada menu **Tambah Satwa**, pengguna memasukkan ID, nama, dan jenis satwa. Jenis hanya boleh Mamalia atau Reptil. Jika Mamalia, pengguna mengisi habitat. Jika Reptil, pengguna menjawab ya atau tidak untuk berbisa. Data lalu disimpan ke dalam ArrayList.
 
@@ -112,14 +112,14 @@ Pada menu 1. Tambah Satwa, pengguna memasukkan ID 1 yang sudah dipakai. Program 
 
 **7. Hapus Data Satwa**
 
-Pengguna memilih menu 4. Hapus Satwa, lalu memasukkan ID 3. Jika ID ditemukan, data dihapus dari ArrayList dan program menampilkan pesan "Siap Boss, data satwa berhasil dihapus!". Jika ID tidak ada, program menampilkan pesan "Woopss, ID satwa tidak ditemukan Bosku!".
+Pengguna memilih menu 4. Hapus Satwa, lalu memasukkan ID 3. Jika ID ditemukan, data dihapus dari ArrayList dan program menampilkan pesan "Siap Boss, data satwa berhasil dihapus!". Jika ID tidak ada, program menampilkan pesan "Maaf, ID satwa tidak ditemukan Boss!".
 
 <img width="582" height="102" alt="image" src="https://github.com/user-attachments/assets/12d8c350-6fa8-43a4-9ea1-51d3b1de6936" />
 
 
 **8. Keluar dari Program**
 
-Pengguna memilih menu 5. Keluar. Program menampilkan pesan "Siap Boss, program selesai. Sampai jumpa Bosku!" dan berhenti.
+Pengguna memilih menu 5. Keluar. Program menampilkan pesan "Siap Boss, program selesai. Sampai jumpa Boss!" dan berhenti.
 
 <img width="592" height="208" alt="image" src="https://github.com/user-attachments/assets/912280a6-ad08-48e3-a4f6-9d9fd111ef26" />
 
@@ -132,11 +132,11 @@ Encapsulation adalah cara menyembunyikan data (atribut) di dalam class, sehingga
 
 Penerapan di program ini:
 
-- Di class `Satwa`, atribut `id` dibuat `private final` dan hanya punya getter, karena ID tidak boleh berubah setelah data dibuat. Atribut `nama` dan `jenis` dibuat `protected` dan diakses lewat getter dan setter.
-- Di class `Mamalia`, atribut `habitat` dibuat `private` dengan `getHabitat()` dan `setHabitat()`.
-- Di class `Reptil`, atribut `berbisa` dibuat `private` dengan `isBerbisa()` dan `setBerbisa()`.
-- Di class `SatwaCRUD`, ArrayList `daftarSatwa` dan method `idSudahAda()` dibuat `private` karena hanya dipakai di dalam class itu.
-- Method yang dipanggil dari class lain, seperti constructor, getter, setter, dan `tampilkanInfo()`, dibuat `public`.
+- Di class Satwa, atribut id dibuat private final dan hanya punya getter, karena ID tidak boleh berubah setelah data dibuat. Atribut nama dan jenis dibuat protected dan diakses lewat getter dan setter.
+- Di class Mamalia, atribut habitat dibuat private dengan getHabitat() dan setHabitat().
+- Di class Reptil, atribut berbisa dibuat private dengan isBerbisa() dan setBerbisa().
+- Di class SatwaCRUD, ArrayList daftarSatwa dan method idSudahAda() dibuat private karena hanya dipakai di dalam class itu.
+- Method yang dipanggil dari class lain, seperti constructor, getter, setter, dan tampilkanInfo(), dibuat public.
 
 Contoh kode:
 
@@ -156,7 +156,7 @@ public class Satwa {
 }
 ```
 
-Saat update nama, `SatwaCRUD` memakai `satwa.setNama(nama)`, bukan mengubah atribut langsung.
+Saat update nama, SatwaCRUD memakai satwa.setNama(nama), bukan mengubah atribut langsung.
 
 ---
 
@@ -167,14 +167,14 @@ Inheritance adalah konsep di mana sebuah class (subclass) mewarisi atribut dan m
 ```
         Satwa   (superclass)
           |
-    +-----+-----+
+    +-----+-----+ 
     |           |
  Mamalia      Reptil   (subclass)
 ```
 
-- `Satwa` sebagai superclass menyimpan data umum: ID, nama, dan jenis.
-- `Mamalia` dan `Reptil` sebagai subclass mewarisi data tersebut dan menambahkan data khusus (habitat atau berbisa).
-- Kata kunci `super(id, nama, jenis)` di constructor subclass dipakai untuk memanggil constructor `Satwa`.
+- Satwa sebagai superclass menyimpan data umum: ID, nama, dan jenis.
+- Mamalia dan Reptil sebagai subclass mewarisi data tersebut dan menambahkan data khusus (habitat atau berbisa).
+- Kata kunci super(id, nama, jenis) di constructor subclass dipakai untuk memanggil constructor Satwa.
 - Peran Satwa sebagai superclass, yaitu data umum yang dimiliki semua satwa.
 - Peran Mamalia dan Reptil sebagai subclass, lengkap dengan apa yang diwarisi dan atribut khusus yang ditambahkan.
 - Hubungan "is-a": Mamalia adalah Satwa, Reptil adalah Satwa, sehingga keduanya bisa disimpan dalam satu ArrayList<Satwa>.
@@ -195,9 +195,9 @@ public class Mamalia extends Satwa {
 }
 ```
 
-**Polymorphism (method overriding).** Method `tampilkanInfo()` ada di `Satwa`, lalu di-override di `Mamalia` dan `Reptil` memakai `@Override`. Di `SatwaCRUD`, ArrayList bertipe `Satwa` bisa berisi Mamalia dan Reptil sekaligus. Saat `for-each` memanggil `satwa.tampilkanInfo()`, Java otomatis memakai versi method milik class yang sebenarnya. Jadi satu perintah menghasilkan tampilan berbeda untuk tiap jenis satwa.
+**Polymorphism (method overriding).** Method tampilkanInfo() ada di Satwa, lalu di-override di Mamalia dan Reptil memakai @Override. Di SatwaCRUD, ArrayList bertipe Satwa bisa berisi Mamalia dan Reptil sekaligus. Saat for-each memanggil satwa.tampilkanInfo(), Java otomatis memakai versi method milik class yang sebenarnya. Jadi satu perintah menghasilkan tampilan berbeda untuk tiap jenis satwa.
 
-**Method final.** Method `cetakStatus()` di `Satwa` dibuat `final` sehingga tidak bisa di-override. Status "Satwa Dilindungi" berlaku sama untuk semua satwa.
+**Method final.** Method cetakStatus() di Satwa dibuat final sehingga tidak bisa di-override. Status "Satwa Dilindungi" berlaku sama untuk semua satwa.
 
 ---
 
@@ -205,13 +205,13 @@ public class Mamalia extends Satwa {
 
 Value-add pada UTS ini adalah penerapan **MVC (Model, View, Controller)** versi sederhana. MVC memisahkan program menjadi tiga bagian sesuai tugasnya, sehingga kode lebih rapi dan mudah diperbaiki.
 
-- **Model** (package `model`): `Satwa`, `Mamalia`, `Reptil`. Menyimpan data satwa.
-- **View** (package `view`): `Menu`. Menampilkan menu dan menerima pilihan pengguna.
-- **Controller** (package `Controller`): `SatwaCRUD` dan `SatwaCek`. Mengatur proses tambah, tampil, update, hapus, dan memeriksa input.
+- **Model** (package model): Satwa, Mamalia, Reptil. Menyimpan data satwa.
+- **View** (package view): Menu. Menampilkan menu dan menerima pilihan pengguna.
+- **Controller** (package Controller): SatwaCRUD dan SatwaCek. Mengatur proses tambah, tampil, update, hapus, dan memeriksa input.
 
-Class `UTSPBOAlifAnugrahR` hanya sebagai pintu masuk (`main`) untuk menjalankan program.
+Class UTSPBOAlifAnugrahR hanya sebagai pintu masuk (main) untuk menjalankan program.
 
-Contohnya, jika ingin mengubah tampilan menu, cukup ubah `Menu`. Jika ingin mengubah aturan validasi, cukup ubah `SatwaCek`. Ini adalah MVC versi sederhana karena `SatwaCRUD` masih memakai Scanner dan `System.out.println`, mengikuti pola Service yang dipelajari di perkuliahan.
+Contohnya, jika ingin mengubah tampilan menu, cukup ubah Menu. Jika ingin mengubah aturan validasi, cukup ubah SatwaCek. Ini adalah MVC versi sederhana karena SatwaCRUD masih memakai Scanner dan System.out.println, mengikuti pola Service yang dipelajari di perkuliahan.
 
 ---
 
