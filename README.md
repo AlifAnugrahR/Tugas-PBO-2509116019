@@ -1,4 +1,4 @@
-# UTS PBO: Sistem Pendataan dan Monitoring Satwa Dilindungi
+# Tugas PBO: Sistem Pendataan dan Monitoring Satwa Dilindungi
 
 Alif Anugrah Ramadhan | 2509116019 | Kelas A Sistem Informasi
 
